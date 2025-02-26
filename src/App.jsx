@@ -1,32 +1,48 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { CiLollipop } from "react-icons/ci";
+// import Hello from './01/Hello'
+// import MyClock from './02/MyClock';
+import MyDiv1 from './03/MyDiv1' ;
+import { GoHomeFill } from "react-icons/go";
+import { FaPhoneAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 function App() {
-// userstate 지워줘야함 > 지움
   return (
-    // 프래그먼트 태그
-    <div className="w-full h-full ">
-      <div className='w-full flex justify-center items-center p-10'>
-        <a href="https://vite.dev" target="_blank"  >
-        {/* class는 예약어여서 사용x -> className*/}
-          <img src={viteLogo} className="logo" alt="Vite logo"/>
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    // full = 100%, screen - 100vh, @media : xl: 
+    //<main>에 flex-grow잡히려면 flex flex-col 들어가야함
+    <div className="w-full xl:w-8/10 h-screen mx-auto flex flex-col">
+      <header className="w-full h-20 bg-amber-50 
+                        px-10
+                        flex justify-between items-center">
+        <h1 className= "text-4xl text-amber-950 font-bold flex">
+          KDT01
+        </h1>
+        <div className="text-m font-bold text-amber-950 flex items-center">
+      <GoHomeFill />
       </div>
-      <h1 className='font-bold text-2xl '>Vite + React</h1>
-      <div className="card">
-        <p className='tracking-tight text-sm -m-5'>
-          부산대학교 KDT 1기 하지원
-        </p>
+      </header>
+      {/* flex-grow 화면에서 header와 footer값을 뺀 나머지를 차지함 // overflow 메인에만 스크롤 */}
+      <main className="w-full flex-grow
+                      pt-10 
+                      flex flex-col justify-start items-center
+                      overflow-y-auto">
+      {/* <Hello /> */}
+      {/* <MyClock/> */}
+      <MyDiv1/>
+
+      </main>
+      <footer className="w-full h-20 bg-amber-950 px-10
+                        flex flex-col justify-center items-start">
+      <div className= "text-sm font-bold text-amber-50">
+        AI 데이터 분석 풀스택 웹개발자 양성과정
       </div>
-      <p className="w-full flex justify-center text-fuchsia-400  items-center text-5xl">
-      <CiLollipop />
-      </p>
+      <div className="text-xs font-medium text-amber-50 my-0.5">
+      <p className="flex"><span className="mx-1.5"><FaPhoneAlt/></span> 010.000.0000</p>
+      <p className="flex "><span className="mx-1.5"><MdEmail/></span> ddddddd@gmail.com</p>
+      </div>
+
+      </footer>
     </div>
+
   )
 }
 // 안하면 import 불가
