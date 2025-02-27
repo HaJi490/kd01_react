@@ -1,6 +1,7 @@
 // import Hello from './01/Hello'
 // import MyClock from './02/MyClock';
-import MyDiv1 from './03/MyDiv1' ;
+// import MyDiv1 from './03/MyDiv1' ;
+import MyList from './04/MyList';
 import { GoHomeFill } from "react-icons/go";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
@@ -27,7 +28,8 @@ function App() {
                       overflow-y-auto">
       {/* <Hello /> */}
       {/* <MyClock/> */}
-      <MyDiv1/>
+      {/* <MyDiv1/> */}
+      <MyList />
 
       </main>
       <footer className="w-full h-20 bg-amber-950 px-10
