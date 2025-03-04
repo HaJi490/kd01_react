@@ -2,6 +2,8 @@
 // import MyClock from './02/MyClock';
 // import MyDiv1 from './03/MyDiv1' ;
 import MyList from './04/MyList';
+import Lotto from './05/Lotto';
+
 import { GoHomeFill } from "react-icons/go";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
@@ -29,7 +31,9 @@ function App() {
       {/* <Hello /> */}
       {/* <MyClock/> */}
       {/* <MyDiv1/> */}
-      <MyList />
+      {/* <MyList /> */}
+      <Lotto />
+
 
       </main>
       <footer className="w-full h-20 bg-amber-950 px-10

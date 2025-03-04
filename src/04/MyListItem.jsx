@@ -12,12 +12,13 @@ export default function MyListItem({d1, d2, img, show}) {
          //3. state 변수 변경
         setStCnt(stCnt + 1);
         console.log(cnt);
+      
     }
 
   return (
     <div className="border border-stone-200 flex flex-row">
        {/* {img}아님 이미지는 <img src> // root기준 경로*/}
-        <img src={img} className="w-1/4  mr-0.5 m-3"></img>
+        <img src={img} className="w-1/4 mr-0.5 m-3"></img>
         
         <div className="w-3/4 m-5">
             <h1 className="h-1/4 font-bold ">

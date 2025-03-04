@@ -9,7 +9,7 @@ export default function MyList() {
     //   }
     
     let show = true;
-    //map의 ()=>{return문} 콜백함수 생략 > 명령어 하나니까,  //const도 됨 
+    //map의 ()=>{return문} 콜백함수 생략 > 명령어 하나니까  //const도 됨 
     // item은 오브젝트, 객체, 내용 & i는 index
     let tags = MyListData.map( item => <MyListItem 
                                     key={item.title}
