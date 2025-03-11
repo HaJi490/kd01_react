@@ -8,7 +8,7 @@ export default function BoxOffice() {
     const getFetchData = async ()=>{
         let url=`https://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?`;
         //환경변수의 키값가져오기!!!!!!!!!
-        url = `${url}key=3cb7e0b52166eacac35ba6980cb09133&targetDt=20250310`;
+        url = `${url}key=&targetDt=20250310`;
 
         console.log(url);
         //await #이 함수가 실행된 뒤에 다음꺼 실행
