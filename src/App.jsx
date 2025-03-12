@@ -1,12 +1,13 @@
 // import Hello from './01/Hello'
- import MyClock from './02/MyClock';
+//  import MyClock from './02/MyClock';
 // import MyDiv1 from './03/MyDiv1' ;
 // import MyList from './04/MyList';
 //import Lotto from './05/Lotto';
 //import FoodMain from './06/FoodMain';
 // import MyToggle from "./07/MyToggle";
 //import MyEffect from "./08/MyEffect";
-import BoxOffice from './09/BoxOffice';
+// import BoxOffice from './09/BoxOffice';
+import Traffic from './10/Traffic';
 
 import './02/MyClock.css'
 
@@ -42,7 +43,8 @@ function App() {
       {/* <FoodMain /> */}
       {/* < MyToggle /> */}
       {/* <MyEffect/> */}
-      <BoxOffice/>
+      {/* <BoxOffice/> */}
+      <Traffic/>
 
       </main>
       <footer className="w-full min-h-20 bg-amber-950 px-10
