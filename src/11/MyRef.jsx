@@ -13,9 +13,9 @@ export default function MyRef() {
     e.preventDefault();
 
     //입력 공백 체크
-    if(refInput1.current.value ==''){//current?
+    if(refInput1.current.value ==''){//current #ref사용시 반드시 사용해야함
         alert('첫번째 값을 입력하세요.');
-        refInput1.current.focus(); //focus?
+        refInput1.current.focus(); //focus #커서 올렸을때
         return;
     }
 
@@ -65,7 +65,8 @@ export default function MyRef() {
                 <input type="number" id="txt1"  ref={refInput1}  // onClick={handleInit}
                     className="w-full px-3 py-2 border border-stone-600 bg-stone-50 rounded-md
                                block text-stone-900 text-center
-                               focus:ring-blue-500 focus:border-blue-500"/>
+                             focus:ring-blue-500 focus:border-blue-500"/>
+                              {/* focus했을 때 ring #윤곽선강조  */}
                 <select id="sel" ref={refSelect}
                         className="w-full px-3 py-2 border border-stone-300  bg-stone-50
                                     block text-stone-900 rounded-md text-center">

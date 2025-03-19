@@ -8,7 +8,8 @@
 //import MyEffect from "./08/MyEffect";
 // import BoxOffice from './09/BoxOffice';
 //import Traffic from './10/Traffic';
-import MyRef from './11/MyRef';
+// import MyRef from './11/MyRef';
+import Gallery from './12/Gallery';
 
 import './02/MyClock.css'
 
@@ -46,7 +47,8 @@ function App() {
       {/* <MyEffect/> */}
       {/* <BoxOffice/> */}
       {/* <Traffic/>/ */}
-      <MyRef/>
+      {/* <MyRef/> */}
+      <Gallery/>
 
       </main>
       <footer className="w-full min-h-20 bg-amber-950 px-10
