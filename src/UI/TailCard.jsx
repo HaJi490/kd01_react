@@ -7,12 +7,13 @@ export default function TailCard({title, subtitle, imgurl, kws}) {
 
   return (
     <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
-        <a href="#">
-            <img className="rounded-t-lg" src={imgurl} alt="" />
-        </a>
+        <div className="w-full h-48">
+            <img className="rounded-t-lg w-full h-full object-cover" src={imgurl} alt={title} />
+        </div>
         <div className="p-5">
             <a href="#">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+            {/* truncate 한줄 말줄임 */}
+                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white truncate">
                     {title}
                 </h5>
             </a>
