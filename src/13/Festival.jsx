@@ -25,6 +25,7 @@ export default function Festival() {
         let festiList = data.getFestivalKr.item;
         festiList.map(item => item.UC_SEQ);
         setTags(festiList);
+        //왜 tags는 빈배열
         console.log("festiList: ", festiList);
         
         setCard(festiList.map(item=> <TailCard key={item.UC_SEQ}
@@ -52,7 +53,8 @@ export default function Festival() {
     },[tags])//fetchdata가 완성됐을때
     
     useEffect(()=>{
-        if(gugun.length== 0) return;
+        if(gugun.length == 0) return;
+        
         console.log("구군정보: ", gugun);
     },[gugun])
 
