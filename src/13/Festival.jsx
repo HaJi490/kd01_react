@@ -72,12 +72,12 @@ export default function Festival() {
 
   return (
     <div>
-        <div>
+        <form>
             <TailSelect id="sel1" 
                         refSel={refSelect}
                         ops={gugun} 
                         handleChange={handleCard}/>
-        </div>
+        </form>
         <div className="grid gap-4 grid-cols-1 md:grid-cols-2">
             {card} 
         </div>
