@@ -14,6 +14,7 @@ import Festival from './13/Festival';
 import RouteMain from './14/RouteMain';
 import Fcst from './15/Fcst';
 import FcstList from './15/FcstList';
+import MyDiv1 from './18/MyDiv1';
 
 import './02/MyClock.css'
 
@@ -46,7 +47,8 @@ function App() {
             <Link to='/traffic' className=' py-1 px-2  rounded-sm font-semibold text-stone-700  hover:bg-stone-50 hover:text-stone-300'>Traffic</Link>
             <Link to='/gallery' className='py-1 px-2  rounded-sm font-semibold text-stone-700  hover:bg-stone-50 hover:text-stone-300'>Gallely</Link>
             <Link to='/festival' className='py-1 px-2  rounded-sm font-semibold text-stone-700  hover:bg-stone-50 hover:text-stone-300'>Festival</Link>
-            <Link to='/fcst' className='py-1 px-2  rounded-sm font-semibold text-stone-700  hover:bg-stone-50 hover:text-stone-300'>일기예보</Link>
+            <Link to='/fcst' className='py-1 px-2  rounded-sm font-semibold text-stone-700  hover:bg-stone-50 hover:text-stone-300'>Forecast</Link>
+            <Link to='/mydiv1' className='py-1 px-2  rounded-sm font-semibold text-stone-700  hover:bg-stone-50 hover:text-stone-300'>전역상태</Link>
           </div>
         </header>
         {/* flex-grow 화면에서 header와 footer값을 뺀 나머지를 차지함 // overflow 메인에만 스크롤 */}
@@ -65,6 +67,7 @@ function App() {
             <Route path='/router' element={<RouteMain/>}/>
             <Route path='/fcst' element={<Fcst/>}/>
             <Route path='/fcstlist' element={<FcstList/>}/>
+            <Route path='/mydiv1' element={<MyDiv1/>}/>
           </Routes>
         {/* <Hello /> */}
         {/* <MyDiv1/> */}

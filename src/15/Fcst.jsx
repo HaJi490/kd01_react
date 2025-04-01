@@ -72,21 +72,24 @@ export default function Fcst() {
   return (
     //onSubmit={(e)=>preventDefault()}
     // <form onSubmit={(e)=>preventDefault()}>
-    <div>
-        <h2 className="font-bold ">
+    <div className="w-10/12">
+        <h2 className="font-bold text-center">
             일기예보
         </h2>
-        <input type="date" ref={refdt}/>
-        <TailSelect id ="sel"
-                refSel ={refsel}
-                ops ={location}
-                handleChange={handleChange}/>
-    
-        <TailButton caption ="초단기 예보" color="lime" 
-                    onClick={()=>handleClick("초단기예보")} />
+        <div className="w-full grid grid-cols-2">
+            <input type="date" ref={refdt} className="mx-3 block py-2.5 px-0 mb-3 w-auto text-sm text-gray-500 bg-transparent border-0 border-b-2 border-stone-200  dark:text-gray-400 dark:border-gray-700 focus:outline-none focus:ring-0 focus:border-gray-200 peer"/>
+            <TailSelect id ="sel"
+                    refSel ={refsel}
+                    ops ={location}
+                    handleChange={handleChange}
+                    className="mx-3"/>
+        
+            <TailButton caption ="초단기 예보" color="lime" 
+                        onClick={()=>handleClick("초단기예보")} />
 
-        <TailButton caption ="단기 예보" color="lime" 
-                    onClick={()=>handleClick("단기예보")} />
+            <TailButton caption ="단기 예보" color="lime" 
+                        onClick={()=>handleClick("단기예보")} />
+        </div>
     </div>
     //  </form>
   )
